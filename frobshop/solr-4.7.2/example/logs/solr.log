@@ -498,3 +498,201 @@ INFO  - 2021-01-22 14:01:41.561; org.apache.solr.handler.component.SuggestCompon
 INFO  - 2021-01-22 14:01:41.564; org.apache.solr.spelling.suggest.SolrSuggester; reload()
 INFO  - 2021-01-22 14:01:41.565; org.apache.solr.spelling.suggest.SolrSuggester; build()
 INFO  - 2021-01-22 14:01:41.626; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@47649cc[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2021-01-24 16:20:10.244; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2021-01-24 16:20:10.278; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\contexts at interval 0
+INFO  - 2021-01-24 16:20:10.288; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\contexts\solr-jetty-context.xml
+INFO  - 2021-01-24 16:20:11.389; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2021-01-24 16:20:11.451; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2021-01-24 16:20:11.480; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2021-01-24 16:20:11.481; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2021-01-24 16:20:11.481; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2021-01-24 16:20:11.572; org.apache.solr.core.ConfigSolr; Loading container configuration from D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\solr.xml
+INFO  - 2021-01-24 16:20:11.677; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr
+INFO  - 2021-01-24 16:20:11.684; org.apache.solr.core.CoreContainer; New CoreContainer 460741164
+INFO  - 2021-01-24 16:20:11.684; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2021-01-24 16:20:11.694; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2021-01-24 16:20:11.694; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2021-01-24 16:20:11.698; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2021-01-24 16:20:11.698; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2021-01-24 16:20:11.699; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2021-01-24 16:20:11.700; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2021-01-24 16:20:11.700; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2021-01-24 16:20:11.701; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2021-01-24 16:20:11.702; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2021-01-24 16:20:11.931; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2021-01-24 16:20:11.945; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2021-01-24 16:20:11.946; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2021-01-24 16:20:11.981; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr
+INFO  - 2021-01-24 16:20:11.996; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\
+INFO  - 2021-01-24 16:20:12.001; org.apache.solr.core.CorePropertiesLocator; Found 1 core definitions
+INFO  - 2021-01-24 16:20:12.009; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using instanceDir: D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1
+INFO  - 2021-01-24 16:20:12.011; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\'
+INFO  - 2021-01-24 16:20:12.110; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2021-01-24 16:20:12.115; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2021-01-24 16:20:12.117; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2021-01-24 16:20:12.117; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/asm-3.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.124; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+INFO  - 2021-01-24 16:20:12.124; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2021-01-24 16:20:12.125; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2021-01-24 16:20:12.127; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2021-01-24 16:20:12.131; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+INFO  - 2021-01-24 16:20:12.132; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.134; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/fontbox-1.8.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.160; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/icu4j-52.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.162; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.163; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2021-01-24 16:20:12.163; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/jempbox-1.8.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.164; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2021-01-24 16:20:12.165; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2021-01-24 16:20:12.166; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - 2021-01-24 16:20:12.166; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/pdfbox-1.8.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.167; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/poi-3.9.jar' to classloader
+INFO  - 2021-01-24 16:20:12.168; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/poi-ooxml-3.9.jar' to classloader
+INFO  - 2021-01-24 16:20:12.194; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/poi-ooxml-schemas-3.9.jar' to classloader
+INFO  - 2021-01-24 16:20:12.195; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/poi-scratchpad-3.9.jar' to classloader
+INFO  - 2021-01-24 16:20:12.195; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2021-01-24 16:20:12.196; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.197; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/tika-core-1.4.jar' to classloader
+INFO  - 2021-01-24 16:20:12.198; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/tika-parsers-1.4.jar' to classloader
+INFO  - 2021-01-24 16:20:12.199; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/tika-xmp-1.4.jar' to classloader
+INFO  - 2021-01-24 16:20:12.199; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.200; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.201; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.230; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - 2021-01-24 16:20:12.231; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2021-01-24 16:20:12.232; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - 2021-01-24 16:20:12.236; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/dist/solr-cell-4.7.2.jar' to classloader
+INFO  - 2021-01-24 16:20:12.264; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/clustering/lib/attributes-binder-1.2.0.jar' to classloader
+INFO  - 2021-01-24 16:20:12.265; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/clustering/lib/carrot2-mini-3.8.0.jar' to classloader
+INFO  - 2021-01-24 16:20:12.266; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2021-01-24 16:20:12.267; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2021-01-24 16:20:12.267; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2021-01-24 16:20:12.297; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2021-01-24 16:20:12.298; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2021-01-24 16:20:12.299; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2021-01-24 16:20:12.302; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/dist/solr-clustering-4.7.2.jar' to classloader
+INFO  - 2021-01-24 16:20:12.331; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2021-01-24 16:20:12.332; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2021-01-24 16:20:12.333; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/dist/solr-langid-4.7.2.jar' to classloader
+INFO  - 2021-01-24 16:20:12.335; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - 2021-01-24 16:20:12.364; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2021-01-24 16:20:12.366; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2021-01-24 16:20:12.367; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2021-01-24 16:20:12.430; org.apache.solr.core.SolrResourceLoader; Adding 'file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/dist/solr-velocity-4.7.2.jar' to classloader
+INFO  - 2021-01-24 16:20:12.778; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2021-01-24 16:20:12.782; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_47
+INFO  - 2021-01-24 16:20:12.937; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2021-01-24 16:20:12.963; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2021-01-24 16:20:12.990; org.apache.solr.schema.IndexSchema; [collection1] Schema name=default
+INFO  - 2021-01-24 16:20:13.165; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2021-01-24 16:20:13.166; org.apache.solr.schema.IndexSchema; query parser default operator is AND
+INFO  - 2021-01-24 16:20:13.167; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2021-01-24 16:20:13.331; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2021-01-24 16:20:13.387; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\, dataDir=D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data\
+INFO  - 2021-01-24 16:20:13.390; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2021-01-24 16:20:13.393; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2021-01-24 16:20:13.394; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+INFO  - 2021-01-24 16:20:13.405; org.apache.solr.core.CachingDirectoryFactory; return new directory for D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data
+INFO  - 2021-01-24 16:20:13.406; org.apache.solr.core.SolrCore; New index directory detected: old=null new=D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data\index/
+INFO  - 2021-01-24 16:20:13.409; org.apache.solr.core.CachingDirectoryFactory; return new directory for D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data\index
+INFO  - 2021-01-24 16:20:13.417; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2021-01-24 16:20:13.419; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2021-01-24 16:20:13.424; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2021-01-24 16:20:13.476; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2021-01-24 16:20:13.503; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2021-01-24 16:20:13.625; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2021-01-24 16:20:13.632; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.633; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.636; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2021-01-24 16:20:13.636; org.apache.solr.core.RequestHandlers; created /browse: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.640; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2021-01-24 16:20:13.642; org.apache.solr.core.RequestHandlers; created /update/json: solr.UpdateRequestHandler
+INFO  - 2021-01-24 16:20:13.643; org.apache.solr.core.RequestHandlers; created /update/csv: solr.UpdateRequestHandler
+INFO  - 2021-01-24 16:20:13.645; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2021-01-24 16:20:13.647; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2021-01-24 16:20:13.648; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2021-01-24 16:20:13.649; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2021-01-24 16:20:13.650; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2021-01-24 16:20:13.651; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2021-01-24 16:20:13.655; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2021-01-24 16:20:13.658; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2021-01-24 16:20:13.660; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2021-01-24 16:20:13.670; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2021-01-24 16:20:13.671; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.671; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.672; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.672; org.apache.solr.core.RequestHandlers; created /suggest: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.673; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.674; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.675; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.676; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.677; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.678; org.apache.solr.core.RequestHandlers; created /elevate: solr.SearchHandler
+INFO  - 2021-01-24 16:20:13.696; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2021-01-24 16:20:13.722; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2021-01-24 16:20:13.729; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2021-01-24 16:20:13.779; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2021-01-24 16:20:13.779; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2021-01-24 16:20:13.823; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(SimpleFSDirectory@D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data\index lockFactory=NativeFSLockFactory@D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data\index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+INFO  - 2021-01-24 16:20:13.824; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2021-01-24 16:20:13.838; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1219263c[collection1] main
+INFO  - 2021-01-24 16:20:13.843; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2021-01-24 16:20:13.848; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2021-01-24 16:20:13.853; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2021-01-24 16:20:13.856; org.apache.solr.handler.component.SuggestComponent; Initializing SuggestComponent
+INFO  - 2021-01-24 16:20:13.857; org.apache.solr.spelling.suggest.SolrSuggester; init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2021-01-24 16:20:13.871; org.apache.solr.spelling.suggest.SolrSuggester; Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2021-01-24 16:20:13.874; org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\conf\elevate.xml
+INFO  - 2021-01-24 16:20:13.901; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2021-01-24 16:20:13.950; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@1219263c[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2021-01-24 16:20:13.951; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2021-01-24 16:20:14.022; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=24 
+INFO  - 2021-01-24 16:20:14.065; org.apache.solr.servlet.SolrDispatchFilter; user.dir=D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example
+INFO  - 2021-01-24 16:20:14.094; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2021-01-24 16:20:14.095; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2021-01-24 16:20:14.095; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2021-01-24 16:20:14.096; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2021-01-24 16:20:14.096; org.apache.solr.handler.component.SuggestComponent$SuggesterListener; Loading suggester index for: mySuggester
+INFO  - 2021-01-24 16:20:14.097; org.apache.solr.spelling.suggest.SolrSuggester; reload()
+INFO  - 2021-01-24 16:20:14.097; org.apache.solr.spelling.suggest.SolrSuggester; build()
+INFO  - 2021-01-24 16:20:14.128; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@1219263c[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2021-01-24 16:20:14.128; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2021-01-24 16:20:50.244; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2021-01-24 16:20:50.245; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2021-01-24 16:20:50.246; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1d962b4d[collection1] main
+INFO  - 2021-01-24 16:20:50.249; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2021-01-24 16:20:50.249; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@1d962b4d[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2021-01-24 16:20:50.257; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2021-01-24 16:20:50.257; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@1d962b4d[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2021-01-24 16:20:50.258; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update/ params={commit=true} {deleteByQuery=*:* (-1689774404635983872),commit=} 0 66
+INFO  - 2021-01-24 16:20:50.266; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=true,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2021-01-24 16:20:50.267; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2021-01-24 16:20:50.268; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7f039e26[collection1] main
+INFO  - 2021-01-24 16:20:50.270; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2021-01-24 16:20:50.271; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@7f039e26[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2021-01-24 16:20:50.272; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2021-01-24 16:20:50.273; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@7f039e26[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2021-01-24 16:20:50.274; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2021-01-24 16:20:50.274; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2021-01-24 16:20:50.275; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@559b2492[collection1] main
+INFO  - 2021-01-24 16:20:50.276; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2021-01-24 16:20:50.276; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@559b2492[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2021-01-24 16:20:50.277; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2021-01-24 16:20:50.278; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@559b2492[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2021-01-24 16:20:50.278; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update/ params={commit=true} {optimize=,commit=} 0 12
+INFO  - 2021-01-24 16:20:58.041; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8983
+INFO  - 2021-01-24 16:20:58.042; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/example/solr-webapp/webapp/},D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example/webapps/solr.war
+INFO  - 2021-01-24 16:20:59.046; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=460741164
+INFO  - 2021-01-24 16:20:59.047; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@14d4e428
+INFO  - 2021-01-24 16:20:59.048; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=2,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=1,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=1,cumulative_errors=0,transaction_logs_total_size=67,transaction_logs_total_number=1}
+INFO  - 2021-01-24 16:20:59.050; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2021-01-24 16:20:59.050; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2021-01-24 16:20:59.051; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2021-01-24 16:20:59.082; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2021-01-24 16:20:59.084; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2021-01-24 16:20:59.085; org.apache.solr.core.CachingDirectoryFactory; looking to close D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data\index [CachedDir<<refCount=0;path=D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data\index;done=false>>]
+INFO  - 2021-01-24 16:20:59.113; org.apache.solr.core.CachingDirectoryFactory; Closing directory: D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data\index
+INFO  - 2021-01-24 16:20:59.114; org.apache.solr.core.CachingDirectoryFactory; looking to close D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data [CachedDir<<refCount=0;path=D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data;done=false>>]
+INFO  - 2021-01-24 16:20:59.115; org.apache.solr.core.CachingDirectoryFactory; Closing directory: D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example\solr\collection1\data
+INFO  - 2021-01-24 16:20:59.117; org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/D:/YandexDisk/GitHub/django%20shop/frobshop/solr-4.7.2/example/solr-webapp/webapp/},D:\YandexDisk\GitHub\django shop\frobshop\solr-4.7.2\example/webapps/solr.war
