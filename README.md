@@ -30,7 +30,7 @@
 
 ## 🧐 О проекте  <a name = "about"></a>
 
-[![ShopPlan](GitHubStuff\Images\ShopPlan.png)]()
+[![ShopPlan](https://github.com/mentoster/Django-shop/blob/master/GitHubStuff/Images/ShopPlan.png?raw=true)]()
 
 ## 🏁 Старт <a name = "getting_started"></a>
 
