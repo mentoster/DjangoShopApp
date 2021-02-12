@@ -25,11 +25,13 @@
 - [Старт](#getting_started)
 - [Развертывание](#deployment)
 - [Использование](#usage)
-- [TODO](../TODO.md)
+- [TODO](TODO.md)
 - [Authors](#authors)
 
 ## 🧐 О проекте  <a name = "about"></a>
+
 [![ShopPlan](GitHubStuff\Images\ShopPlan.png)]()
+
 ## 🏁 Старт <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
@@ -59,8 +61,6 @@ until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo.
-
-
 
 ## 🚀 Развертывание  <a name = "deployment"></a>
 
