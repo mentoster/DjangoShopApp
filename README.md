@@ -68,10 +68,12 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Использовано <a name = "usage"></a>
 
-- [Django](https://www.django.com/) - Database
-- [Oscar](https://github.com/django-oscar/django-oscar) - Server Framework
-- [Solr](https://lucene.apache.org/solr/) - Web Framework
-- [Docker](https://www.docker.com/) - Server Environment
+- [Django](https://www.django.com/) - web framework
+- [Oscar](https://github.com/django-oscar/django-oscar) - shop module
+- [Solr](https://lucene.apache.org/solr/) -  is an open-source enterprise-search platform
+- [Docker](https://www.docker.com/) - container
+- [nginx ](https://nginx.org/ru/)- web and proxy server
+- wsgi - Web Server Gateway Interface
 
 ## ✍️ Авторы <a name = "authors"></a>
 
