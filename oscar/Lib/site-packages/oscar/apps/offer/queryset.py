@@ -8,7 +8,7 @@ def product_class_as_queryset(product):
     return ProductClass.objects.filter(
         pk__in=product.__class__.objects.filter(pk=product.pk)
         .annotate(
-            product_class_id=models.Case(
+            _product_class_id=models.Case(
                 models.When(
                     structure=product.CHILD, then=models.F("parent__product_class")
                 ),
@@ -18,7 +18,7 @@ def product_class_as_queryset(product):
                 ),
             )
         )
-        .values("product_class_id")
+        .values("_product_class_id")
     )
 
 
@@ -38,7 +38,7 @@ class RangeQuerySet(models.query.QuerySet):
     def _ranges_that_contain_product(self, product):
         Category = product.categories.model
         included_in_subtree = product.categories.filter(
-            path__rstartswith=OuterRef("path"), depth__lte=OuterRef("depth")
+            path__startswith=OuterRef("path")
         )
         category_tree = Category.objects.annotate(
             is_included_in_subtree=Exists(included_in_subtree.values("id"))
@@ -48,6 +48,7 @@ class RangeQuerySet(models.query.QuerySet):
             ~models.Q(excluded_products=product), includes_all_products=True
         )
         narrow = self.filter(
+            ~models.Q(excluded_products=product),
             models.Q(included_products=product)
             | models.Q(included_categories__in=category_tree)
             | models.Q(classes__in=product_class_as_queryset(product)),

@@ -144,13 +144,13 @@ WSGI_APPLICATION = 'frobshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-        'ATOMIC_REQUESTS': True,
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django-db',
+        'USER': 'postgresql',
+        'PASSWORD': 'HackDb',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        # 'ATOMIC_REQUESTS': True,
     }
 }
 # Password validation

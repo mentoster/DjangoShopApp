@@ -65,8 +65,8 @@ class PercentageDiscountBenefit(Benefit):
         discount = D('0.00')
         affected_items = 0
         max_affected_items = self._effective_max_affected_items()
-        affected_lines = []
         for price, line in line_tuples:
+            affected_items += line.quantity_with_offer_discount(offer)
             if affected_items >= max_affected_items:
                 break
             if discount_amount_available == 0:
@@ -80,7 +80,7 @@ class PercentageDiscountBenefit(Benefit):
                 break
 
             line_discount = self.round(discount_percent / D('100.0') * price
-                                       * int(quantity_affected))
+                                       * int(quantity_affected), basket.currency)
 
             if discount_amount_available is not None:
                 line_discount = min(line_discount, discount_amount_available)
@@ -88,7 +88,6 @@ class PercentageDiscountBenefit(Benefit):
 
             apply_discount(line, line_discount, quantity_affected, offer)
 
-            affected_lines.append((line, line_discount, quantity_affected))
             affected_items += quantity_affected
             discount += line_discount
 
@@ -156,7 +155,6 @@ class AbsoluteDiscountBenefit(Benefit):
         # XXX: spreading the discount is a policy decision that may not apply
 
         # Apply discount equally amongst them
-        affected_lines = []
         applied_discount = D('0.00')
         last_line_idx = len(lines_to_discount) - 1
         for i, (line, price, qty) in enumerate(lines_to_discount):
@@ -168,9 +166,8 @@ class AbsoluteDiscountBenefit(Benefit):
             else:
                 # Calculate a weighted discount for the line
                 line_discount = self.round(
-                    ((price * qty) / affected_items_total) * discount)
+                    ((price * qty) / affected_items_total) * discount, basket.currency)
             apply_discount(line, line_discount, qty, offer)
-            affected_lines.append((line, line_discount, qty))
             applied_discount += line_discount
 
         return BasketDiscount(discount)
@@ -243,7 +240,7 @@ class FixedPriceBenefit(Benefit):
                 line_discount = discount - discount_applied
             else:
                 line_discount = self.round(
-                    discount * (price * quantity) / value_affected)
+                    discount * (price * quantity) / value_affected, basket.currency)
             apply_discount(line, line_discount, quantity, offer)
             discount_applied += line_discount
         return BasketDiscount(discount)
@@ -316,7 +313,7 @@ class ShippingAbsoluteDiscountBenefit(ShippingBenefit):
         verbose_name = _("Shipping absolute discount benefit")
         verbose_name_plural = _("Shipping absolute discount benefits")
 
-    def shipping_discount(self, charge):
+    def shipping_discount(self, charge, currency=None):
         return min(charge, self.value)
 
 
@@ -334,7 +331,7 @@ class ShippingFixedPriceBenefit(ShippingBenefit):
         verbose_name = _("Fixed price shipping benefit")
         verbose_name_plural = _("Fixed price shipping benefits")
 
-    def shipping_discount(self, charge):
+    def shipping_discount(self, charge, currency=None):
         if charge < self.value:
             return D('0.00')
         return charge - self.value
@@ -354,6 +351,6 @@ class ShippingPercentageDiscountBenefit(ShippingBenefit):
         verbose_name = _("Shipping percentage discount benefit")
         verbose_name_plural = _("Shipping percentage discount benefits")
 
-    def shipping_discount(self, charge):
+    def shipping_discount(self, charge, currency=None):
         discount = charge * self.value / D('100.0')
         return discount.quantize(D('0.01'))
