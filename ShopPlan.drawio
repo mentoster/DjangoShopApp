@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2021-02-16T08:12:28.929Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="LQsrP_t2059vWYGLlh6T" version="14.2.4" type="embed">
+<mxfile host="65bd71144e" modified="2021-02-16T08:12:38.279Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="xmufgw1gUV1HLwKmqR9T" version="14.2.4" type="embed">
     <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
         <mxGraphModel dx="2736" dy="1991" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -321,7 +321,7 @@
                 <mxCell id="45" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
                     <mxGeometry x="-1200" y="-800" width="210" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="47" value="Заголовок" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                <mxCell id="47" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
                     <mxGeometry x="-1200" y="-700" width="210" height="50" as="geometry"/>
                 </mxCell>
             </root>
