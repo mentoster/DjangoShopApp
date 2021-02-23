@@ -11,7 +11,7 @@ run:
 	docker-compose up
 
 migrate:
-	$(COMMAND) 'cd frobshop; for db in default database2; do ./manage.py migrate --database=$${db}; done'
+	$(COMMAND) 'cd frobshop; for db in default database1; do ./manage.py migrate --database=$${db}; done'
 
 collectstatic:
 	docker-compose run --rm djangoapp frobshop/manage.py collectstatic --no-input
