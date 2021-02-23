@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\YandexDisk\GitHub\django shop\oscar"
+VIRTUAL_ENV="D:\Users\Dimam\Documents\Github\buffshop\oscar"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
