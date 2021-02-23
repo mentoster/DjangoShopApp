@@ -47,10 +47,10 @@
 `docker-compose build` or `make build`.
 
 ### Migrate databases
-`docker-compose run --rm djangoapp hello/manage.py migrate` or `make migrate`.
+`docker-compose run --rm djangoapp frobshop/manage.py migrate` or `make migrate`.
 
 ### Collect static files
-`docker-compose run --rm djangoapp hello/manage.py collectstatic --no-input'` or `make collectstatic`.
+`docker-compose run --rm djangoapp frobshop/manage.py collectstatic --no-input'` or `make collectstatic`.
 
 ### Run
 `docker-compose up` or `make run`.
