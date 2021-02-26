@@ -13,6 +13,10 @@ run:
 migrate:
 	$(COMMAND) 'cd frobshop; for db in default database2; do ./manage.py migrate --database=$${db}; done'
 
+dbash:
+	docker ps
+	echo use command for djangoapp
+	echo docker exec -t -i yourHash bash
 collectstatic:
 	docker-compose run --rm djangoapp frobshop/manage.py collectstatic --no-input
 
