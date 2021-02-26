@@ -17,6 +17,7 @@ dbash:
 	docker ps
 	echo use command for djangoapp
 	echo docker exec -t -i yourHash bash
+
 collectstatic:
 	docker-compose run --rm djangoapp frobshop/manage.py collectstatic --no-input
 
