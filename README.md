@@ -34,37 +34,32 @@
 
 ## 🏁 Старт <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Здесь вы сможете получить инструкции для запуска проекта на своем локальном устройстве. Смотрите [Развертывание](#deployment), чтобы узнать, как развернуть проект в системе.
 
-### Предпосылки
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
 
 ### Установка
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
+У вас должен быть установлены *Docker* и  *Docker-Compose*, *make*
 
 ## 🚀 Развертывание  <a name = "deployment"></a>
 
-Add additional notes about how to deploy this on a live system.
+### Build
+`docker-compose build` or `make build`.
+
+### Migrate databases
+`docker-compose run --rm djangoapp frobshop/manage.py migrate` or `make migrate`.
+
+### Collect static files
+`docker-compose run --rm djangoapp frobshop/manage.py collectstatic --no-input'` or `make collectstatic`.
+
+### Run
+`docker-compose up` or `make run`.
+
+### Tests
+- `make checksafety`
+- `make checkstyle`
+- `make test`
+- `make coverage`
 
 ## ⛏️ Использовано <a name = "usage"></a>
 
