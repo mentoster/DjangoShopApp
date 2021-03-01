@@ -201,3 +201,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(os.path.dirname(
     os.path.dirname(BASE_DIR)), 'static')
 MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'media')
+
+#  Other settings
+OSCAR_SHOP_NAME = 'WerkelCourier'
+OSCAR_SHOP_TAGLINE = 'магазин электротоваров'
