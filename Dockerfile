@@ -10,6 +10,7 @@ WORKDIR /opt/services/djangoapp/src
 RUN pip install -r requirements.txt
 
 COPY . /opt/services/djangoapp/src
+
 RUN cd frobshop && python manage.py collectstatic --no-input
 
 EXPOSE 8000
