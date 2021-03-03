@@ -9,7 +9,7 @@
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![python](https://img.shields.io/badge/python-3.8.3-green)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
 
 </div>
 
