@@ -10,20 +10,16 @@
 {% endblock %}
 
 {% block breadcrumbs %}
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="{% url 'dashboard:index' %}">{% trans "Dashboard" %}</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-                {% trans "Products" %}
-            </li>
-        </ol>
-    </nav>
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url 'dashboard:index' %}">{% trans "Dashboard" %}</a>
+        </li>
+        <li class="active">{% trans "Products" %}</li>
+    </ul>
 {% endblock %}
 
 {% block header %}
-    <div class="page-header">
+    <div class="page-header action">
         <h1>{% trans "Products" %}</h1>
     </div>
 {% endblock header %}
@@ -31,23 +27,21 @@
 {% block dashboard_content %}
     {% block create_product %}
         <div class="table-header">
-            <h3><i class="fas fa-sitemap"></i> {% trans "Create new product" %}</h3>
+            <h3><i class="icon-sitemap icon-large"></i> {% trans "Create new product" %}</h3>
         </div>
-        <div class="card card-body">
+        <div class="well">
             <form action="{% url 'dashboard:catalogue-product-create' %}" method="get" class="form-inline">
                 {% include "oscar/dashboard/partials/form_fields_inline.html" with form=productclass_form %}
-                <button class="btn btn-primary" type="submit" data-loading-text="{% trans 'Submitting...' %}">
-                    <i class="fas fa-plus-circle"></i> {% trans "New Product" %}
-                </button>
+                <button class="btn btn-primary" type="submit" data-loading-text="{% trans 'Submitting...' %}"><i class="icon-plus"></i> {% trans "New Product" %}</button>
             </form>
         </div>
     {% endblock %}
 
     {% block search_products %}
         <div class="table-header">
-            <h3><i class="fas fa-search"></i> {% trans "Search Products" %}</h3>
+            <h3><i class="icon-search icon-large"></i>{% trans "Search Products" %}</h3>
         </div>
-        <div class="card card-body">
+        <div class="well">
             <form method="get" class="form-inline">
                 {% comment %}
                     Add the current query string to the search form so that the
@@ -60,7 +54,7 @@
                 {% endfor %}
 
                 {% include "oscar/dashboard/partials/form_fields_inline.html" with form=form %}
-                <button type="submit" class="btn btn-primary" data-loading-text="{% trans 'Searching...' %}"><i class="fas fa-search"></i> {% trans "Search" %}</button>
+                <button type="submit" class="btn btn-primary" data-loading-text="{% trans 'Searching...' %}">{% trans "Search" %}</button>
             </form>
         </div>
     {% endblock %}
@@ -75,11 +69,11 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title"></h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title"></h4>
                         </div>
                         <div class="modal-body text-center">
-                            <img class="img-fluid mx-auto">
+                            <img class="img-responsive center-block">
                         </div>
                     </div>
                 </div>

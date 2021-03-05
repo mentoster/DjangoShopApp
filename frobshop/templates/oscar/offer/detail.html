@@ -9,17 +9,15 @@
 {% endblock %}
 
 {% block breadcrumbs %}
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="{{ homepage_url }}">{% trans "Home" %}</a>
-            </li>
-            <li class="breadcrumb-item">
-                <a href="{% url 'offer:list' %}">{% trans "Offers" %}</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">{{ offer.name }}</li>
-        </ol>
-    </nav>
+<ul class="breadcrumb">
+    <li>
+        <a href="{{ homepage_url }}">{% trans "Home" %}</a>
+    </li>
+    <li>
+        <a href="{% url 'offer:list' %}">{% trans "Offers" %}</a>
+    </li>
+    <li class="active">{{ offer.name }}</li>
+</ul>
 {% endblock %}
 
 {% block headertext %}{{ offer.name }}{% endblock %}
@@ -37,10 +35,11 @@
                 <p>{{ offer.description|safe }}</p>
             </div>
         {% endif %}
-        <div class="col-sm-5">
-            <div class="card card-body bg-light">
-                <h2 class="h4"><i class="fas fa-exclamation"></i> {% trans "What you need to do" %}</h2>
-                <p>{{ upsell_message }}</p>
+            <div class="col-sm-5">
+                <div class="well">
+                    <h2 class="h4"><i class="icon-exclamation-sign icon-large"></i> {% trans "What you need to do" %}</h2>
+                    <p>{{ upsell_message }}</p>
+                </div>
             </div>
         </div>
     </div>
@@ -50,9 +49,9 @@
         <section>
             <div>
                 {% include "oscar/partials/pagination.html" %}
-                <ol class="row list-unstyled ml-0 pl-0">
+                <ol class="row">
                     {% for product in products %}
-                    <li class="col-sm-4 col-md-3 col-lg-3">{% render_product product %}</li>
+                    <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3">{% render_product product %}</li>
                     {% endfor %}
                 </ol>
                 {% include "oscar/partials/pagination.html" %}

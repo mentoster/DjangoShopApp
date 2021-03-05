@@ -7,13 +7,15 @@
 {% endblock %}
 
 {% block breadcrumbs %}
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'dashboard:index' %}">{% trans "Dashboard" %}</a></li>
-            <li class="breadcrumb-item"><a href="{% url 'dashboard:voucher-list' %}">{% trans "Vouchers" %}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ voucher }}</li>
-        </ol>
-    </nav>
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url 'dashboard:index' %}">{% trans "Dashboard" %}</a>
+        </li>
+        <li>
+            <a href="{% url 'dashboard:voucher-list' %}">{% trans "Vouchers" %}</a>
+        </li>
+        <li class="active">{{ voucher }}</li>
+    </ul>
 {% endblock %}
 
 {% block headertext %}

@@ -132,19 +132,32 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'frobshop.wsgi.application'
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'db.sqlite3',
-#         'USER': '',
-#         'PASSWORD': '',
-#         'HOST': '',
-#         'PORT': '',
-#         'ATOMIC_REQUESTS': True,
-#     }
-# }
+def location(x): return os.path.join(
+    os.path.dirname(os.path.realpath(__file__)), '..', x)
+
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [
+            location('templates'),  # templates directory of the project
+        ],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'oscar.core.context_processors.metadata',
+                #
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+WSGI_APPLICATION = 'frobshop.wsgi.application'
 
 DATABASES = {
     'default': {
