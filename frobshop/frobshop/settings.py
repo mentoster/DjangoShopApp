@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     # my oscar customizations
     # core applications
     'core.order.apps.OrderConfig',
-    # 'core.catalogue.apps.CatalogueConfig',
+    'core.catalogue.apps.CatalogueConfig',
     # dashboard applications
     # 'core.dashboard.apps.DashboardConfig',
     # 'core.dashboard.orders.apps.OrdersDashboardConfig',
@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'oscar.apps.checkout.apps.CheckoutConfig',
     'oscar.apps.address.apps.AddressConfig',
     'oscar.apps.shipping.apps.ShippingConfig',
-    'oscar.apps.catalogue.apps.CatalogueConfig',
+    # 'oscar.apps.catalogue.apps.CatalogueConfig',
     'oscar.apps.catalogue.reviews.apps.CatalogueReviewsConfig',
     'oscar.apps.communication.apps.CommunicationConfig',
     'oscar.apps.partner.apps.PartnerConfig',
