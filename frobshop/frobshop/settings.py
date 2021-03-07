@@ -33,6 +33,15 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # others
     'import_export',
+    # my oscar customizations
+    # core applications
+    'core.order.apps.OrderConfig',
+    # 'core.catalogue.apps.CatalogueConfig',
+    # dashboard applications
+    # 'core.dashboard.apps.DashboardConfig',
+    # 'core.dashboard.orders.apps.OrdersDashboardConfig',
+    # 'core.dashboard.reports.apps.ReportsDashboardConfig',
+
     #oscar
     'django.contrib.admin',
     'django.contrib.auth',
@@ -74,13 +83,6 @@ INSTALLED_APPS = [
     'oscar.apps.dashboard.vouchers.apps.VouchersDashboardConfig',
     'oscar.apps.dashboard.communications.apps.CommunicationsDashboardConfig',
     'oscar.apps.dashboard.shipping.apps.ShippingDashboardConfig',
-    # core applications
-    'shop_models.order.apps.OrderConfig',
-    # 'shop_models.catalogue.apps.CatalogueConfig',
-    # dashboard applications
-    # 'shop_models.dashboard.apps.DashboardConfig',
-    # 'shop_models.dashboard.orders.apps.OrdersDashboardConfig',
-    # 'shop_models.dashboard.reports.apps.ReportsDashboardConfig',
     # 3rd-party apps that oscar depends on
     'widget_tweaks',
     'haystack',
