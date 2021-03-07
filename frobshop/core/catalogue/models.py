@@ -7,9 +7,4 @@ class Product(AbstractProduct):
     video_url = models.URLField()
 
 
-class ImportExport(Product):
-    class Meta:
-        proxy = True
-
-
 from oscar.apps.catalogue.models import *  # noqa isort:skip
