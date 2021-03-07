@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
+    # others
+    'import_export',
+    #oscar
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,7 +49,7 @@ INSTALLED_APPS = [
     'oscar.apps.checkout.apps.CheckoutConfig',
     'oscar.apps.address.apps.AddressConfig',
     'oscar.apps.shipping.apps.ShippingConfig',
-    'oscar.apps.catalogue.apps.CatalogueConfig',
+    # 'oscar.apps.catalogue.apps.CatalogueConfig',
     'oscar.apps.catalogue.reviews.apps.CatalogueReviewsConfig',
     'oscar.apps.communication.apps.CommunicationConfig',
     'oscar.apps.partner.apps.PartnerConfig',
@@ -54,15 +57,14 @@ INSTALLED_APPS = [
     'oscar.apps.payment.apps.PaymentConfig',
     'oscar.apps.offer.apps.OfferConfig',
     # 'oscar.apps.order.apps.OrderConfig',
-    'shop_models.order.apps.OrderConfig',
     'oscar.apps.customer.apps.CustomerConfig',
     'oscar.apps.search.apps.SearchConfig',
     'oscar.apps.voucher.apps.VoucherConfig',
     'oscar.apps.wishlists.apps.WishlistsConfig',
-    'oscar.apps.dashboard.apps.DashboardConfig',
-    'oscar.apps.dashboard.reports.apps.ReportsDashboardConfig',
+    # 'oscar.apps.dashboard.apps.DashboardConfig',
+    # 'oscar.apps.dashboard.reports.apps.ReportsDashboardConfig',
     'oscar.apps.dashboard.users.apps.UsersDashboardConfig',
-    'oscar.apps.dashboard.orders.apps.OrdersDashboardConfig',
+    # 'oscar.apps.dashboard.orders.apps.OrdersDashboardConfig',
     'oscar.apps.dashboard.catalogue.apps.CatalogueDashboardConfig',
     'oscar.apps.dashboard.offers.apps.OffersDashboardConfig',
     'oscar.apps.dashboard.partners.apps.PartnersDashboardConfig',
@@ -72,7 +74,13 @@ INSTALLED_APPS = [
     'oscar.apps.dashboard.vouchers.apps.VouchersDashboardConfig',
     'oscar.apps.dashboard.communications.apps.CommunicationsDashboardConfig',
     'oscar.apps.dashboard.shipping.apps.ShippingDashboardConfig',
-
+    # core applications
+    'shop_models.order.apps.OrderConfig',
+    'shop_models.catalogue.apps.CatalogueConfig',
+    # dashboard applications
+    'shop_models.dashboard.apps.DashboardConfig',
+    'shop_models.dashboard.orders.apps.OrdersDashboardConfig',
+    'shop_models.dashboard.reports.apps.ReportsDashboardConfig',
     # 3rd-party apps that oscar depends on
     'widget_tweaks',
     'haystack',
@@ -230,3 +238,6 @@ MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'media')
 #  Other settings
 OSCAR_SHOP_NAME = 'WerkelCourier'
 OSCAR_SHOP_TAGLINE = 'магазин электротоваров'
+
+# import-export
+IMPORT_EXPORT_USE_TRANSACTIONS = True
