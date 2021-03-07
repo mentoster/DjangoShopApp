@@ -1,7 +1,7 @@
 from import_export import resources
-from .models import Person
+from .models import ImportExport
 
 
-class PersonResource(resources.ModelResource):
+class ExportImportResource(resources.ModelResource):
     class Meta:
-        model = Person
+        model = ImportExport
