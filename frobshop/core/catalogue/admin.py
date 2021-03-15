@@ -1,10 +1,13 @@
+from django.db.models import fields
 from oscar.apps.catalogue.admin import *  # noqa
 from import_export.admin import ImportExportModelAdmin
 from django.contrib import admin
-from .models import Product, ImportExportCategory, ImportExportProductCategory
+from .models import Product, ImportFromApi
 
 
 admin.site.unregister(Product)
+
+
 @admin.register(Product)
 class ProductAdmin(ImportExportModelAdmin):
     date_hierarchy = 'date_created'
@@ -26,11 +29,10 @@ class ProductAdmin(ImportExportModelAdmin):
                 'attribute_values__attribute'))
 
 
-# @admin.register(ImportExportCategory)
-# class ImpExpCategoryAdmin(ImportExportModelAdmin):
-#    pass
+@admin.register(ImportFromApi)
+class ImportFromApiAdmin(admin.ModelAdmin):
+    list_display = ('api',)
 
-
-# @admin.register(ImportExportProductCategory)
-# class ImpExpCategoryAdmin(ImportExportModelAdmin):
-#    pass
+    class Meta:
+        model = ImportFromApi
+        fields = ('api',)
