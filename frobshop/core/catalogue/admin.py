@@ -1,14 +1,10 @@
 from oscar.apps.catalogue.admin import *  # noqa
 from import_export.admin import ImportExportModelAdmin
 from django.contrib import admin
-from .models import Product
+from .models import Product, ImportExportCategory, ImportExportProductCategory
 
 
 admin.site.unregister(Product)
-
-
-
-
 @admin.register(Product)
 class ProductAdmin(ImportExportModelAdmin):
     date_hierarchy = 'date_created'
@@ -28,3 +24,13 @@ class ProductAdmin(ImportExportModelAdmin):
             .prefetch_related(
                 'attribute_values',
                 'attribute_values__attribute'))
+
+
+# @admin.register(ImportExportCategory)
+# class ImpExpCategoryAdmin(ImportExportModelAdmin):
+#    pass
+
+
+# @admin.register(ImportExportProductCategory)
+# class ImpExpCategoryAdmin(ImportExportModelAdmin):
+#    pass
