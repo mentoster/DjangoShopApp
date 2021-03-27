@@ -8,6 +8,7 @@ class SyncBD():
 
 
 class Product(AbstractProduct):
+    price = models.IntegerField(default=999999)
     article = models.TextField(max_length=30, default="null")
     series = models.TextField(max_length=20, default="null")
     seo_name_for_site = models.TextField(max_length=50, default="null")

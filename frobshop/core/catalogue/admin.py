@@ -29,10 +29,10 @@ class ProductAdmin(ImportExportModelAdmin):
                 'attribute_values__attribute'))
 
 
-@admin.register(ImportFromApi)
-class ImportFromApiAdmin(admin.ModelAdmin):
-    list_display = ('api',)
+# @admin.register(ImportFromApi)
+# class ImportFromApiAdmin(admin.ModelAdmin):
+#     list_display = ('api',)
 
-    class Meta:
-        model = ImportFromApi
-        fields = ('api',)
+#     class Meta:
+#         model = ImportFromApi
+#         fields = ('api',)
