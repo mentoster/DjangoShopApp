@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.postgres.fields import ArrayField
 from oscar.apps.catalogue.abstract_models import AbstractProduct
 
 
@@ -8,14 +8,8 @@ class SyncBD():
 
 
 class Product(AbstractProduct):
-    price = models.IntegerField(default=999999)
     article = models.TextField(max_length=30, default="null")
     series = models.TextField(max_length=20, default="null")
-    seo_name_for_site = models.TextField(max_length=50, default="null")
-    category = models.TextField(max_length=20, default="null")
-    barcode = models.TextField(max_length=13, default="null")
-    attribute = models.TextField(max_length=10, default="null")
-    image_url = models.URLField()
 
 
 class ImportFromApi():
