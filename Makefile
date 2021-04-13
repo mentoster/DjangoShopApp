@@ -56,4 +56,4 @@ install-pip:
 	python -m pip install -r requirements.txt
 
 html:
-	.\make.bat html
+	.\sphinx.bat html
