@@ -51,7 +51,7 @@ clean:
 dockerclean:
 	docker system prune -f
 	docker system prune -f --volumes
-install:
+install-pip:
 	python get-pip.py
 	python -m pip install -r requirements.txt
 
