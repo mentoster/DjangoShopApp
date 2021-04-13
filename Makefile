@@ -52,4 +52,8 @@ dockerclean:
 	docker system prune -f
 	docker system prune -f --volumes
 install:
+	python get-pip.py
 	python -m pip install -r requirements.txt
+
+html:
+	.\make.bat html
