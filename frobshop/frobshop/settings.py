@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 INSTALLED_APPS = [
     # others
+    'django.contrib.admindocs',
     'import_export',
     # my oscar customizations
     # core applications
@@ -103,6 +104,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'oscar.apps.basket.middleware.BasketMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'django.contrib.admindocs.middleware.XViewMiddleware'
 ]
 AUTHENTICATION_BACKENDS = (
     'oscar.apps.customer.auth_backends.EmailBackend',

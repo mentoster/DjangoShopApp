@@ -6,6 +6,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
+    path('admin/doc/', include('django.contrib.admindocs.urls')),
 
     # The Django admin is not officially supported; expect breakage.
     # Nonetheless, it's often useful for debugging.
