@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from pathlib import Path
 from oscar.defaults import *
+import django_heroku
 # Replace Oscar’s app with your own in INSTALLED_APPS
 # from oscar import get_core_apps
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -245,3 +246,5 @@ OSCAR_SHOP_TAGLINE = 'магазин электротоваров'
 
 # import-export
 IMPORT_EXPORT_USE_TRANSACTIONS = True
+# Activate Django-Heroku.
+django_heroku.settings(locals())
