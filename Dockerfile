@@ -15,4 +15,4 @@ COPY . /opt/services/djangoapp/src
 RUN cd frobshop && python manage.py collectstatic --no-input
 
 EXPOSE 8000
-CMD ["sh", "-c", "gunicorn", "-c", "config/gunicorn/conf.py", "--bind", ":${PORT}", "--chdir", "frobshop", "frobshop.wsgi:application"]
+CMD ["sh", "-c", "gunicorn", "-c", "config/gunicorn/conf.py", "--bind", ":$PORT", "--chdir", "frobshop", "frobshop.wsgi:application"]
