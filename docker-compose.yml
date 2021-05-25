@@ -52,7 +52,7 @@ services:
   nginx:
     image: nginx:1.13
     ports:
-      - ${PORT}:80
+      - ${PORT}:${PORT}
     volumes:
       - ./config/nginx/conf.d:/etc/nginx/conf.d
       - static:/opt/services/djangoapp/static
