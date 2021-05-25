@@ -173,6 +173,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'frobshop.wsgi.application'
 
 DATABASES = {
+    'default': dj_database_url.config()
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
     #     'NAME': 'database1',
@@ -181,14 +182,14 @@ DATABASES = {
     #     'HOST': 'localhost',
     #     'PORT': '5433',
     # },
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'database1',
-        'USER': 'database1_role',
-        'PASSWORD': 'database1_password',
-        'HOST': 'database1',
-        'PORT': '5432',
-    },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'database1',
+    #     'USER': 'database1_role',
+    #     'PASSWORD': 'database1_password',
+    #     'HOST': 'database1',
+    #     'PORT': '5432',
+    # },
 
     # 'database2': {
     #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
